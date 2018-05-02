@@ -7,4 +7,4 @@ ENV LDAP_HOST localhost
 ENV LDAP_PORT 2389
 ENV TOKEN_TIMEOUT 36000
 EXPOSE $ADAP_PORT
-ENTRYPOINT ["/opt/adap/run.sh"]
+CMD ["/opt/adap/run.sh"]
