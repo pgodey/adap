@@ -34,12 +34,12 @@ echo "trustStorePwd=${SSL_TRUST_STORE_PSWD}"
 POOLING=/opt/adap/conf/pooling.properties
 
 echo "alwaysAuthenticate=${POOL_ALWAYS_AUTH}" > ${POOLING}
-echo "maxSize=${POOL_MAX_SIZE}" >> ${POOLING}
+echo "maxSize=${POOL_MAXSIZE}" >> ${POOLING}
 echo "timeOut=${POOL_TIMEOUT}" >> ${POOLING}
 
 echo "POOLING=${POOLING}"
 echo "alwaysAuthenticate=${POOL_ALWAYS_AUTH}"
-echo "maxSize=${POOL_MAX_SIZE}"
+echo "maxSize=${POOL_MAXSIZE}"
 echo "timeOut=${POOL_TIMEOUT}"
 
 exec /opt/adap/bin/adap.sh
