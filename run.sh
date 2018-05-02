@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 #
 #sed -i "s/\(ldapUrl=\).*\$/\1${LDAP_HOST}/" /opt/adap/conf/general.properties
 #sed -i "s/\(ldapPort=\).*\$/\1${LDAP_PORT}/" /opt/adap/conf/general.properties
@@ -41,5 +41,5 @@ echo "alwaysAuthenticate=${POOL_ALWAYS_AUTH}"
 echo "maxSize=${POOL_MAXSIZE}"
 echo "timeOut=${POOL_TIMEOUT}"
 #
-bin/adap.sh
+exec /opt/adap/bin/adap.sh
 #
