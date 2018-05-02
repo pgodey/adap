@@ -21,4 +21,4 @@ ENV POOL_TIMEOUT 10000
 
 EXPOSE $ADAP_PORT
 
-CMD /bin/sh /opt/adap/run.sh
+CMD /bin/sh /opt/adap/bin/adap.sh
