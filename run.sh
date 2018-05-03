@@ -23,4 +23,5 @@ echo "timeOut=${POOL_TIMEOUT}" >> ${POOLING}
 cat ${GENERAL}
 echo ${PATH}
 APP_EXEC=/opt/adap/bin/adap.sh
-/bin/sh ${APP_EXE}
+cat ${APP_EXE}
+.${APP_EXE}
