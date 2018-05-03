@@ -1,9 +1,9 @@
 FROM java:8
 
 COPY adap-1.0-SNAPSHOT.zip adap.zip
-COPY run.sh /opt/adap/run.sh
+COPY run.sh /opt/adap/bin/run.sh
 
-RUN unzip adap.zip -d /opt/adap && chmod +x /opt/adap/bin/adap.sh && chmod +x /opt/adap/run.sh
+RUN unzip adap.zip -d /opt/adap && chmod +x /opt/adap/bin/adap.sh && chmod +x /opt/adap/bin/run.sh
 
 ENV ADAP_PORT 8080
 ENV LDAP_HOST localhost
@@ -21,4 +21,4 @@ ENV POOL_TIMEOUT 10000
 
 EXPOSE $ADAP_PORT
 
-CMD /bin/sh /opt/adap/run.sh
+CMD ["/bin/sh", "/opt/adap/bin/run.sh"]
