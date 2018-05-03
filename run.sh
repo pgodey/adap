@@ -42,7 +42,5 @@ if [ ! -x "$JAVACMD" ] ; then
 fi
 
 REPO="$BASEDIR"/lib
-
 CLASSPATH="$REPO"/*
-
 "$JAVACMD" -DADAP_HOME="$BASEDIR" -cp "$CLASSPATH" com.rli.web.http.service.adap.alone.JettyServer "$@"
