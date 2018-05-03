@@ -20,4 +20,5 @@ echo "alwaysAuthenticate=${POOL_ALWAYS_AUTH}" > ${POOLING}
 echo "maxSize=${POOL_MAXSIZE}" >> ${POOLING}
 echo "timeOut=${POOL_TIMEOUT}" >> ${POOLING}
 #
-/bin/sh /opt/adap/bin/adap.sh
+echo ${PATH}
+adap.sh
