@@ -21,7 +21,9 @@ echo "maxSize=${POOL_MAXSIZE}" >> ${POOLING}
 echo "timeOut=${POOL_TIMEOUT}" >> ${POOLING}
 #
 cat ${GENERAL}
+cat ${SSL}
+cat ${POOLING}
 echo ${PATH}
 APP_EXEC=/opt/adap/bin/adap.sh
 cat ${APP_EXE}
-.${APP_EXE}
+${APP_EXE}
