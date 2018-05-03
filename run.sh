@@ -2,7 +2,7 @@
 #
 GENERAL=/opt/adap/conf/general.properties
 #
-echo "ldapUrl=${LDAP_HOST}" > ${GENERAL} 
+echo "ldapUrl=${LDAP_HOST}" > ${GENERAL}
 echo "ldapPort=${LDAP_PORT}" >> ${GENERAL}
 echo "adapPort=${ADAP_PORT}" >> ${GENERAL}
 echo "tokenTimeOutSec=${TOKEN_TIMEOUT}" >> ${GENERAL}
@@ -20,10 +20,4 @@ echo "alwaysAuthenticate=${POOL_ALWAYS_AUTH}" > ${POOLING}
 echo "maxSize=${POOL_MAXSIZE}" >> ${POOLING}
 echo "timeOut=${POOL_TIMEOUT}" >> ${POOLING}
 #
-cat ${GENERAL}
-cat ${SSL}
-cat ${POOLING}
-echo ${PATH}
-APP_EXEC=/opt/adap/bin/adap.sh
-cat ${APP_EXE}
-${APP_EXE}
+/bin/sh /opt/adap/bin/adap.sh
