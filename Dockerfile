@@ -19,8 +19,6 @@ ENV POOL_ALWAYS_AUTH false
 ENV POOL_MAXSIZE 100
 ENV POOL_TIMEOUT 10000
 
-ENV PATH="/opt/adap/bin:${PATH}"
-
 EXPOSE $ADAP_PORT
 
 CMD ["/bin/sh", "/opt/adap/bin/run.sh"]
