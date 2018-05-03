@@ -41,5 +41,7 @@ echo "alwaysAuthenticate=${POOL_ALWAYS_AUTH}"
 echo "maxSize=${POOL_MAXSIZE}"
 echo "timeOut=${POOL_TIMEOUT}"
 #
+cat /opt/adap/bin/adap.sh
+#
 /bin/sh /opt/adap/bin/adap.sh
 #
